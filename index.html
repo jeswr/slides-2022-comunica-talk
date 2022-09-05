@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head prefix="foaf: http://xmlns.com/foaf/0.1/">
+    <title>Comunica Association Introduction</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="node_modules/shower-material/styles/styles.css">
+    <link rel="stylesheet" href="styles/comunica-custom.css" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css' />
+    
+    <link rel="foaf:maker" href="https://www.rubensworks.net/#me" />
+
+    <style>
+      .shower {
+        --slide-ratio: calc(16 / 9);
+      }
+    </style>
+  </head>
+
+  <body class="shower list" prefix="rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# foaf: http://xmlns.com/foaf/0.1/ owl: http://www.w3.org/2002/07/owl# xsd: http://www.w3.org/2001/XMLSchema# org: http://www.w3.org/ns/org# schema: http://schema.org/ cite: http://purl.org/spar/cito/" typeof="schema:PresentationDigitalDocument">
+    <header class="caption">
+      <div class="title">
+        <h1 property="schema:name">The more you know: Easy access to enriched RDF using LDflex + Comunica</h1>
+      </div>
+      <div class="captiondata">
+        <p class="author" rel="schema:author"><a href="https://www.rubensworks.net/#me">Jesse Wright</a></p>
+        <p class="venue">
+          <a href="https://comunica.dev/events/2022-09-07-association_launch/">Comunica Association Launch Event</a>, <span rel="schema:datePublished">7 September 2022</span></a>
+        </p>
+      </div>
+    </header>
+
+    <section id="title" class="slide title" inlist="" rel="schema:hasPart" resource="#title">
+      <img src="img/comunica_red.svg" alt="Comunica Logo" width="170px" style="float:right" />
+      <h2 property="schema:name">Comunica Association Launch Event</h2>
+      <p>7 September 2022</p>
+      
+      <br \>
+      <h4>Sponsored by</h4>
+      <center>
+      <a href="https://www.ugent.be/ea/idlab/en"><img src="img/sponsor_idlab.png" alt="IDLab" height="60px" /></a>
+      <a href="https://netwerkdigitaalerfgoed.nl/"><img src="img/sponsor_nde.png" alt="NDE" height="60px" style="margin: 0 50px 0 50px" /></a>
+      <a href="https://www.vlaanderen.be/digitaal-vlaanderen"><img src="img/sponsor_dv.png" alt="Digitaal Vlaanderen" height="60px" style="margin: 0 50px 0 0" /></a>
+      <a href="https://cecs.anu.edu.au/"><img src="img/sponsor_anu.svg" alt="Australian National University" height="60px" /></a>
+      </center>
+      
+      <ul class="author inline" style="display:none">
+          <li class="current"><a href="https://www.jeswr.me/">Jesse Wright</a></li>
+      </ul>
+      <p class="affiliation" style="display:none"><a href="http://idlab.technology/">Ghent University – imec – IDLab, Belgium</a></p>
+    </section>
+
+    <section id="start" class="slide" inlist="" rel="schema:hasPart" resource="#start">
+        <h2 property="schema:name" class="big"><a href="https://github.com/ldflex/ldflex">LDflex</a></h2>
+        <ul>
+            <li>
+              <h3>A domain-specific language for querying Linked Data on the Web</h3>
+            </li>
+            
+            
+        </ul>
+        Can write things like: <br/>
+          <code class="center">person.friends.firstName</code> <br/> to get a list of your friends
+    </section>
+    
+    <!-- Tell audience that questions are welcome in chat during presentations, but there is a small delay. -->
+
+    <footer>
+      <p class="license">
+            &#169; <span property="schema:copyrightYear">2022</span> <a href="https://www.rubensworks.net" rel="schema:copyrightHolder"><span resource="https://www.rubensworks.net/#me">Ruben Taelman</span></a>
+            — <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" property="schema:license">Creative Commons Attribution 4.0</a>, unless otherwise indicated.
+      </p>
+      <a href="https://github.com/rubensworks/slides-2022-comunica-launch-intro">Source</a>
+    </footer>
+
+    <script src="node_modules/shower-core/shower.min.js"></script>
+  </body>
+</html>
