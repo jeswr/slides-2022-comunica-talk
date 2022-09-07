@@ -40,11 +40,11 @@ const queryEngine = new ComunicaEngine('https://ruben.verborgh.org/profile/', {
       // 'http://xmlns.com/foaf/spec/index.rdf'
       // foaf is down (: so lets use this instead
       'https://raw.githubusercontent.com/rdfjs/N3.js/6b9bb01258138472863efac80d9fff360e122bbe/perf/data/foaf.ttl',
-      // SAMEAS_DATA
+      SAMEAS_DATA
       // RDFS
       // 'http://www.w3.org/2000/01/rdf-schema'
     ],
-    [KeysRdfReason.rules.name]: KeysRdfDereferenceConstantHylar.owl2rl,
+    // [KeysRdfReason.rules.name]: KeysRdfDereferenceConstantHylar.owl2rl,
     // [KeysRdfReason.rules.name]: 'https://gist.githubusercontent.com/jeswr/60bdf7828650d0ef7ad67bfad4e188c8/raw/61066202255e857c4c7d4c51e701fc79bf54e3f5/custom_alignment.hylar',
     [KeysRdfReason.implicitDatasetFactory.name]: () => new Store()
   }
@@ -59,13 +59,20 @@ const path = new PathFactory({  context, queryEngine, handlers: {
 const ruben = path.create({ subject: new NamedNode('https://www.rubensworks.net/#me'), distinct: true });
 
 async function main() {
-  const seen: Record<string, boolean> = {};
-  for await (const person of ruben.friend) {
-    if (!seen[`${person}`]) {
-      seen[`${person}`] = true;
-      console.log(`${person}`)
-    }
-  }
+
 }
 
 main();
+
+
+// async function main() {
+//   const seen: Record<string, boolean> = {};
+//   for await (const person of ruben.friend) {
+//     if (!seen[`${person}`]) {
+//       seen[`${person}`] = true;
+//       console.log(`${person}`)
+//     }
+//   }
+// }
+
+// main();
