@@ -12,10 +12,18 @@
     "prepare": "shower prepare"
   },
   "dependencies": {
+    "@comunica/query-sparql": "^2.4.3",
+    "@comunica/query-sparql-reasoning": "^0.0.2-alpha.7.0",
+    "@ldflex/async-iteration-handlers": "^1.1.1",
+    "@ldflex/comunica": "^5.0.1",
+    "event-emitter-promisify": "^1.1.0",
+    "ldflex": "^2.15.0",
+    "n3": "^1.16.2",
     "shower-core": "^2.1.0",
     "shower-material": "^2.1.2"
   },
   "devDependencies": {
+    "@types/n3": "^1.10.4",
     "shower-cli": "^0.2.1"
   }
 }
