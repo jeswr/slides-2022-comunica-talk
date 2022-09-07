@@ -37,13 +37,42 @@ const path = new PathFactory({
 const ruben = path.create({ subject: new NamedNode('https://www.rubensworks.net/#me') });
 
 async function main() {
+  
+}
+
+main();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// async function main() {
   // for await (const type of ruben.a) {
-  //   console.log(`${type}`, await type.label ? `\t\t\tLabel is: "${await type.label}"` : `\t\tFragment is: "${type.fragment}"`)
+  //   console.log(`${type}`)
+  //   // console.log(`${type}`, await type.label ? `\t\t\tLabel is: "${await type.label}"` : `\t\tFragment is: "${type.fragment}"`)
   // }
   // @see https://github.com/ldflex/async-iteration-handlers
   // ruben.a.forEach(async (type: any) => {
   //   console.log(`${type}`, await type.label ? `\t\t\tLabel is: "${await type.label}"` : `\t\tFragment is: "${type.fragment}"`)
   // })
-}
+// }
 
-main();
+// main();
